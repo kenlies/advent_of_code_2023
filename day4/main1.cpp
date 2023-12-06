@@ -46,10 +46,10 @@ int main() {
         char curr;
 
         while (ss.get(curr)) {
-            if (curr == stp) {
+            if (curr == stp)
                 break;
-            }
-            if (isdigit(curr)) {
+            if (isdigit(curr)) 
+	    {
                 ss.unget();  // Put the digit back into the stream
                 ss >> temp;
                 winning_nums.push_back(stoi(temp));
