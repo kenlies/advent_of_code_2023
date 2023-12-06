@@ -38,14 +38,16 @@ int main() {
 	int sum = 0;
     fstream file;
     file.open("input.txt");
-    while (getline(file, line)) {
+    while (getline(file, line)) 
+    {
         string newLine = line.substr(10);
         stringstream ss(newLine);
         string temp;
         vector<int> winning_nums;
         char curr;
 
-        while (ss.get(curr)) {
+        while (ss.get(curr)) 
+	{
             if (curr == stp)
                 break;
             if (isdigit(curr)) 
@@ -56,7 +58,7 @@ int main() {
                 temp.clear();
             }
         }
-		sum += get_winning(winning_nums, line.substr(42));
+	sum += get_winning(winning_nums, line.substr(42));
     }
 	cout << sum << endl;
     return 0;
