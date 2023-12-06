@@ -39,7 +39,7 @@ int main() {
     fstream file;
     file.open("input.txt");
     while (getline(file, line)) {
-        string newLine = line.substr(10); // remember to change back to 10
+        string newLine = line.substr(10);
         stringstream ss(newLine);
         string temp;
         vector<int> winning_nums;
