@@ -1,72 +1,50 @@
 //PART 2
-#include <iostream>
 #include <fstream>
-#include <string>
+#include <iostream>
 #include <sstream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
-vector<string> getInput()
+unsigned long long get_input(string line)
 {
-    string s;
-    vector<string> input;
-    while(getline(cin, s))
-        input.push_back(s);
-    return input;
+	stringstream ss(line);
+	string res;
+	string temp;
+
+	while (ss >> temp)
+	{	
+		if (isdigit(temp[0]))
+			res += temp;
+	}
+	return stoull(res);
 }
 
-int score(const vector<string>& input,  vector<int>& dp, int c_num)
+int get_ways_to_win(unsigned long long time, unsigned long long dist)
 {
-    stringstream ss (input[c_num]);
-    string temp;
-    vector<int> winning_num;
+	unsigned long long ways_to_win = 0;
+	unsigned long long time_clone = time;
 
-    int i = 0;
-    bool winning_card = false;
-    bool is_my_nums = false;
-	int n_win = 0;
-    while(ss >> temp)
-    {
-        i++;
-        if(i <= 2) continue;
-        if(temp == "|") is_my_nums = true;
-        else if(is_my_nums)
-        {
-            int my_num = stoi(temp);
-            if(find(winning_num.begin(), winning_num.end(), my_num) != winning_num.end())
-            {
-                winning_card = true;
-                n_win++;
-            }
-        }
-        else
-            winning_num.push_back(stoi(temp));
-    }
-    if(winning_card)
-    {
-        if(dp[c_num] == -1)
-        {
-            int sum = 0;
-            for(int j = 1; j <= n_win; j++)
-                sum += score(input, dp, c_num + j);
-            sum += 1;
-            dp[c_num] = sum;
-        }
-    }
-    else
-        dp[c_num] = 1;
-    return dp[c_num];
+	for (unsigned long long curr_time = 0; curr_time < time_clone; curr_time++, time--)
+	{
+		if ((time * curr_time) > dist)
+			ways_to_win++;
+	}
+	return ways_to_win;
 }
 
 int main()
 {
-    freopen("input.txt", "r", stdin);
-    vector<string> input = getInput();
-    vector<int> dp(input.size());
-    fill(dp.begin(), dp.end(), -1);
-    long long sum = 0;
-    for(int i = 0; i < input.size(); i++)
-        sum += score(input, dp,  i);
-	cout << sum << endl;
+    fstream file;
+	string line;
+	unsigned long long time;
+	unsigned long long dist;
+	file.open("input.txt");
+	getline(file, line);
+	time = get_input(line);
+	getline(file, line);
+	dist = get_input(line);
+
+	cout << get_ways_to_win(time, dist) << endl;
+
+    return 0;
 }
