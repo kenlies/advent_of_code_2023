@@ -4,4 +4,4 @@ My solutions for AoC 2023
 
 Done in c++
 
-There are separate files for part1 and part2: main1.cpp & main2.cpp respectively.
+There are separate files for part 1 and part 2: main1.cpp & main2.cpp respectively.
