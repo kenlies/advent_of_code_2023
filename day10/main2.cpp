@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 void	find_starting_pos(vector<vector<char>> map, vector<int> &curr_pos)
