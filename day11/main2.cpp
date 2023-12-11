@@ -12,7 +12,7 @@ void add_column(vector<vector<char>> &universe, const vector<char> &empty_space,
 		universe[i].insert(universe[i].begin() + position, empty_space[i]);
 }
 
-int	expand_universe(vector<vector<char>> &universe, fstream &file, vector<int> &positions, vector<int> &h_positions)
+int	expand_universe(vector<vector<char>> &universe, fstream &file, vector<int> &v_positions, vector<int> &h_positions)
 {
 	string line;
 	int galaxies = 0;
@@ -45,7 +45,7 @@ int	expand_universe(vector<vector<char>> &universe, fstream &file, vector<int> &
 			}
 		}
 		if (found_galax == false)
-			positions.push_back(col);
+			v_positions.push_back(col);
 	}
 	return galaxies;
 }
