@@ -6,12 +6,6 @@
 #include <cmath>
 using namespace std;
 
-void add_column(vector<vector<char>> &universe, const vector<char> &empty_space, int position)
-{
-	for (int i = 0; i < universe.size(); i++)
-		universe[i].insert(universe[i].begin() + position, empty_space[i]);
-}
-
 int	expand_universe(vector<vector<char>> &universe, fstream &file, vector<int> &v_positions, vector<int> &h_positions)
 {
 	string line;
