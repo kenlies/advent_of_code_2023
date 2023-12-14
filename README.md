@@ -12,4 +12,4 @@ If you are interested in the problems, I believe AoC keeps the problems for each
 
 I did this to get more familiar with C++ & problems related to coding.
 
-And for fun.
+And for fun. 🎅
