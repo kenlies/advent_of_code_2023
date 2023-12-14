@@ -1,4 +1,4 @@
-# Advent_of_Code_2023
+# 🎄 Advent_of_Code_2023 🎄
 
 ![image](https://github.com/kenlies/Advent_of_Code_2023/assets/97135325/4c8fc955-3b93-4f31-978c-74b57c968783)
 
