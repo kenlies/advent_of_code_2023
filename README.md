@@ -11,3 +11,5 @@ As the name suggests, we get a new set of coding problems every day as the adven
 If you are interested in the problems, I believe AoC keeps the problems for each year up, so a quick google search should be enough.
 
 I did this to get more familiar with C++ & problems related to coding.
+
+And for fun.
