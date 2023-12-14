@@ -2,8 +2,8 @@
 
 My solutions for AoC 2023
 
-Done in c++
+Done in C++
 
-There are separate files for part 1 and part 2: main1.cpp & main2.cpp respectively
+As the name suggests, we get a new set of coding problems every day as the advent of that day. There is part 1 and part 1 for each day. I tried to complete both parts, but as we approached the holidays, some of the part 2's took way too much time to get done. As such, some days only include part 1. 
 
-I did this to get more familiar with c++ & problems related to coding
+I did this to get more familiar with C++ & problems related to coding.
