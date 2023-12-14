@@ -10,4 +10,5 @@ If you are interested in the problems, I believe AoC keeps the problems for each
 
 I did this to get more familiar with C++ & problems related to coding.
 
-![image](https://github.com/kenlies/Advent_of_Code_2023/assets/97135325/fce6f750-0ab3-4561-93c8-1846a0444645)
+![image](https://github.com/kenlies/Advent_of_Code_2023/assets/97135325/4c8fc955-3b93-4f31-978c-74b57c968783)
+
