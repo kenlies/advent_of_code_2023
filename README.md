@@ -1,15 +1,18 @@
 # 🎄 Advent_of_Code_2023 🎄
+Every year I'm doing this with a new language. This year I chose **C++**!
 
-![image](https://github.com/kenlies/Advent_of_Code_2023/assets/97135325/4c8fc955-3b93-4f31-978c-74b57c968783)
+![](media/advent.png)
 
-My solutions for AoC 2023
 
-Done in C++
+Advent of Code is an Advent calendar of programming puzzles that can be solved in any programming language you like.
+A new set of puzzles is supplied every day as the advent of that day.
 
-As the name suggests, we get a new set of coding problems every day as the advent of that day. There is part 1 and part 2 for each day. I tried to complete both parts, but as we approached the holidays, some of the part 2's took too much time. As such, some days only include part 1. 
+If you are interested in the problems, you can find them ***[here](https://adventofcode.com/2023/events)***.
 
-If you are interested in the problems, I believe AoC keeps the problems for each year up, so a quick google search should be enough.
+I did this to get more familiar with **C++**, solve programming puzzles, and, of course, for fun.
 
-I did this to get more familiar with C++ & problems related to coding.
+## 🔨 To improve
 
-And for fun. 🎅
+As I'm writing this later, I should've kept the commit history clean and try to do more exercises during those holidays. I also don't want to modify the files to preserve the timestamps.
+
+I still wanted to keep this repository here on github mainly to track my progress.
